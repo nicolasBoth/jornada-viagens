@@ -13,7 +13,7 @@ function App() {
   return (
     <>
       <Header />
-      <main>
+      <main> 
         <section className="hero">
           <Hero />
         </section>

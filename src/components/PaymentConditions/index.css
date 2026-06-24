@@ -15,16 +15,6 @@
   position: relative;
 }
 
-.pagamento h3 {
-  font-size: 28px;
-  width: 300px;
-}
-
-.pagamento p {
-  margin: 24px 0;
-  line-height: 35px;
-  font-size: 20px;
-}
 
 .pagamento-titulo::after {
   content: '';
@@ -37,11 +27,22 @@
   background-color: var(--button-primary-color);
 }
 
+.pagamento h3 {
+  font-size: 28px;
+  width: 300px;
+}
+
+.pagamento p {
+  margin: 24px 0;
+  line-height: 35px;
+  font-size: 20px;
+}
+
 .japao1 {
   background-image: url(src/assets/Montagem\ japão\ 1\ \(1\).png);
   background-repeat: no-repeat;
   background-size: cover;
-  width: 176px;
+  width: 47%;
   height: 254px;
 }
 
@@ -49,7 +50,7 @@
   background-image: url(src/assets/Montagem\ japão\ 2\ \(1\).png);
   background-repeat: no-repeat;
   background-size: cover;
-  width: 176px;
+  width: 47%;
   height: 254px;
 }
 

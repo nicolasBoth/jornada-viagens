@@ -1,5 +1,7 @@
 import { IoMdMenu, IoIosClose } from 'react-icons/io';
+import { FaFacebook, FaInstagram, FaTwitter } from 'react-icons/fa';
 import { useState, useEffect } from 'react';
+import { Globe, Plane, ContactIcon } from 'lucide-react';
 
 export default function Menu() {
   const [showMenu, setShowMenu] = useState(true);
@@ -16,7 +18,6 @@ export default function Menu() {
   }, []);
 
   if (!showMenu) {
-    console.log('chupa');
     return (
       <>
         <nav className="nav-header" id="navHeader">
@@ -50,29 +51,54 @@ export default function Menu() {
         </button>
       )}
       <nav className={`nav-header ${open && 'links--aberto'}`}>
-        <div className="fechar-links">
-          <button className="menu fechar" onClick={openMenu}>
-            <IoIosClose
-              className="close-menu"
-              size={48}
-              color="white"
-              aria-label="Fechar menu"
-              aria-controls="menuLinks"
-              aria-expanded="true"
-            />
-          </button>
+        <div className="pages">
+          <div className="fechar-links">
+            <button className="menu fechar" onClick={openMenu}>
+              <IoIosClose
+                className="close-menu"
+                size={48}
+                color="white"
+                aria-label="Fechar menu"
+                aria-controls="menuLinks"
+                aria-expanded="true"
+              />
+            </button>
+          </div>
+          <ul id="menuLinks" className="links" aria-hidden={!open}>
+            <li>
+              <Globe size={24} color='#fff' className='links-icon'/>
+              <a href="#">Blog</a>
+            </li>
+            <li>
+              <Plane size={24} width={26} color='#fff' className='links-icon'/>
+              <a href="#">Pacotes de viagem</a>
+            </li>
+            <li>
+              <ContactIcon size={24} color='#fff' className='links-icon'/>
+              <a href="#">Contato</a>
+            </li>
+          </ul>
         </div>
-        <ul id="menuLinks" className="links" aria-hidden={!open}>
-          <li>
-            <a href="#">Blog</a>
-          </li>
-          <li>
-            <a href="#">Pacotes de viagem</a>
-          </li>
-          <li>
-            <a href="#">Contato</a>
-          </li>
-        </ul>
+        <div className="redes redes-menu">
+                  <p>Acesse nossas redes:</p>
+                  <ul>
+                    <li>
+                      <a href="#" className="facebook">
+                        <FaFacebook size={24} color="rgb(255, 255, 255)" />
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" className="instagram">
+                        <FaInstagram size={24} color="rgb(255, 255, 255)" />
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" className="twitter">
+                        <FaTwitter size={24} color="rgb(255, 255, 255)" />
+                      </a>
+                    </li>
+                  </ul>
+                </div>
       </nav>
     </>
   );
