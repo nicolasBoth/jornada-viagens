@@ -42,7 +42,7 @@
   background-image: url(src/assets/Montagem\ japão\ 1\ \(1\).png);
   background-repeat: no-repeat;
   background-size: cover;
-  width: 47%;
+  width: 49%;
   height: 254px;
 }
 
@@ -50,7 +50,7 @@
   background-image: url(src/assets/Montagem\ japão\ 2\ \(1\).png);
   background-repeat: no-repeat;
   background-size: cover;
-  width: 47%;
+  width: 49%;
   height: 254px;
 }
 
@@ -82,13 +82,11 @@
     gap: 10px;
     background-image: url(src/assets/Montagem\ japão\ 1\ tablet.jpg);
     height: 254px;
-    width: 312px;
   }
 
   .japao2 {
     background-image: url(src/assets/japao2-tablet.jpg);
     height: 254x;
-    width: 312px;
   }
 
   .japao3 {
@@ -124,12 +122,10 @@
 
   .japao1 {
     background-image: url(src/assets/japao1-desktop.jpg);
-    width: 383px;
   }
 
   .japao2 {
     background-image: url(src/assets/japao2-desktop.jpg);
-    width: 383px;
   }
 
   .japao3 {

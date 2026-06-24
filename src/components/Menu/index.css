@@ -1,5 +1,5 @@
 .nav-header {
-  width: 45vw;
+  width: 60vw;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -35,6 +35,9 @@
 .redes-menu {
   color: var(--text-secondary-color);
   margin-bottom: 24px;
+  font-size: 20px;
+  border-top: 2px solid var(--button-primary-color);
+  padding-top: 24px;
 }
 
 .redes-menu ul {
@@ -80,13 +83,15 @@
   }
 
   .fechar {
-    padding: 16px 16px 24px;
+    padding: 16px;
     background-color: transparent;
   }
 
   .fechar-links {
     display: flex;
     justify-content: flex-end;
+    border-bottom: 2px solid var(--button-primary-color);
+    margin-bottom: 16px;
   }
 
   .links {
