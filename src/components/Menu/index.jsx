@@ -2,22 +2,18 @@ import { IoMdMenu, IoIosClose } from 'react-icons/io';
 import { FaFacebook, FaInstagram, FaTwitter } from 'react-icons/fa';
 import { useState, useEffect } from 'react';
 import { Globe, Plane, ContactIcon } from 'lucide-react';
+import { useIsMobile } from '/src/hooks/useIsMobile.js';
 
 export default function Menu() {
   const [showMenu, setShowMenu] = useState(true);
   const [open, setOpen] = useState(false);
+  const isMobile = useIsMobile();
 
   function openMenu() {
     setOpen(!open);
   }
 
-  useEffect(() => {
-    if (window.screen.width >= 1024) {
-      setShowMenu(false);
-    }
-  }, []);
-
-  if (!showMenu) {
+  if (!isMobile) {
     return (
       <>
         <nav className="nav-header" id="navHeader">
@@ -39,7 +35,7 @@ export default function Menu() {
 
   return (
     <>
-      {!open && showMenu && ( 
+      {isMobile && !open && (
         <button className="menu" onClick={openMenu}>
           <IoMdMenu
             size={48}
@@ -48,8 +44,7 @@ export default function Menu() {
             aria-controls="menuLinks"
             aria-expanded="true"
           />
-        </button>
-      )}
+        </button>)}
       <nav className={`nav-header ${open && 'links--aberto'}`}>
         <div className="pages">
           <div className="fechar-links">
@@ -66,39 +61,39 @@ export default function Menu() {
           </div>
           <ul id="menuLinks" className="links" aria-hidden={!open}>
             <li>
-              <Globe size={24} color='#fff' className='links-icon'/>
+              <Globe size={24} color="#fff" className="links-icon" />
               <a href="#">Blog</a>
             </li>
             <li>
-              <Plane size={24} width={26} color='#fff' className='links-icon'/>
+              <Plane size={24} width={26} color="#fff" className="links-icon" />
               <a href="#">Pacotes de viagem</a>
             </li>
             <li>
-              <ContactIcon size={24} color='#fff' className='links-icon'/>
+              <ContactIcon size={24} color="#fff" className="links-icon" />
               <a href="#">Contato</a>
             </li>
           </ul>
         </div>
         <div className="redes redes-menu">
-                  <p>Acesse nossas redes:</p>
-                  <ul>
-                    <li>
-                      <a href="#" className="facebook">
-                        <FaFacebook size={24} color="rgb(255, 255, 255)" />
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#" className="instagram">
-                        <FaInstagram size={24} color="rgb(255, 255, 255)" />
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#" className="twitter">
-                        <FaTwitter size={24} color="rgb(255, 255, 255)" />
-                      </a>
-                    </li>
-                  </ul>
-                </div>
+          <p>Acesse nossas redes:</p>
+          <ul>
+            <li>
+              <a href="#" className="facebook">
+                <FaFacebook size={24} color="rgb(255, 255, 255)" />
+              </a>
+            </li>
+            <li>
+              <a href="#" className="instagram">
+                <FaInstagram size={24} color="rgb(255, 255, 255)" />
+              </a>
+            </li>
+            <li>
+              <a href="#" className="twitter">
+                <FaTwitter size={24} color="rgb(255, 255, 255)" />
+              </a>
+            </li>
+          </ul>
+        </div>
       </nav>
     </>
   );
