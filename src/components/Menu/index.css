@@ -35,7 +35,7 @@
 .redes-menu {
   color: var(--text-secondary-color);
   margin-bottom: 24px;
-  font-size: 20px;
+  font-size: 16px;
   border-top: 2px solid var(--button-primary-color);
   padding-top: 24px;
 }
@@ -44,12 +44,16 @@
   gap: 32px;
 }
 
-@media (min-width: 426px) {
+@media (min-width: 450px) {
   .nav-header {
     width: 40vw;
   }
 
   .links a {
+    font-size: 20px;
+  }
+
+  .redes-menu p {
     font-size: 20px;
   }
 }

@@ -65,7 +65,7 @@ export default function Menu() {
               <a href="#">Blog</a>
             </li>
             <li>
-              <Plane size={24} width={26} color="#fff" className="links-icon" />
+              <Plane size={24} color="#fff" className="links-icon" />
               <a href="#">Pacotes de viagem</a>
             </li>
             <li>
