@@ -1,0 +1,27 @@
+.cabecalho {
+  background-color: var(--background-tertiary-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 36px;
+}
+
+.logo-cabecalho {
+  background-image: url(src/assets/Logo-provisória-branca\ 1.svg);
+  background-size: cover;
+  width: 64px;
+  height: 64px;
+}
+
+
+@media (min-width: 1440px) {
+  .cabecalho {
+    padding: 36px 120px;
+  }
+
+  .logo-cabecalho {
+    background-image: url(src/assets/Logo-provisória-branca-desktop.png);
+    width: 260px;
+    height: 64px;
+  }
+}

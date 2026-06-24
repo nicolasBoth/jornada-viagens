@@ -1,0 +1,189 @@
+.ofertas-titulo {
+  text-align: center;
+  margin-bottom: 50px;
+  color: var(--text-primary-color);
+  position: relative;
+  padding-bottom: 20px;
+}
+
+.ofertas-titulo h2 {
+  font-size: 28px;
+}
+
+.ofertas-titulo::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 180px;
+  height: 4px;
+  background-color: var(--button-primary-color);
+}
+
+.ofertas {
+  gap: 24px;
+  padding: 0 24px;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  justify-content: center;
+  margin-bottom: 88px;
+}
+
+.card {
+  background-color: #000;
+  border-radius: 16px;
+  
+  position: relative;
+  z-index: -1;
+
+  width: 100%;
+  height: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+
+  border-radius: 16px;
+  color: var(--text-secondary-color);
+  transition: 0.2s;
+}
+
+.card:hover {
+  cursor: pointer;
+}
+
+.card h2 {
+  font-size: 40px;
+}
+
+.card h3 {
+  font-size: 32px;
+}
+
+.card h4 {
+  font-weight: 300;
+  font-size: 20px;
+}
+
+.cards-btn {
+  background-color: var(--button-primary-color);
+  line-height: 64px;
+  width: 90%;
+  color: #fff;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 8px;
+  text-align: center;
+  z-index: 0;
+  border: none;
+
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+  transition: 0.2s;
+}
+
+.cards-btn:hover {
+  cursor: pointer;
+  transform: translateY(-2px);
+}
+
+.japao::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url(src/assets/Tokyo.jpg);
+  background-size: cover;
+  opacity: 50%;
+  z-index: -2;
+  border-radius: 16px;
+}
+
+.san-andreas::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url(src/assets/san-andreas.avif);
+  background-size: cover;
+  opacity: 50%;
+  z-index: -1;
+  border-radius: 16px;
+}
+
+.paraiba::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url(src/assets/paraiba.jpeg);
+  background-size: cover;
+  opacity: 50%;
+  z-index: -1;
+  border-radius: 16px;
+}
+
+.manaus::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url(src/assets/manaus.avif);
+  background-size: cover;
+  opacity: 50%;
+  z-index: -1;
+  border-radius: 16px;
+}
+
+@media (min-width: 768px) {
+  .cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .card {
+    background-color: #000;
+    border-radius: 16px;
+
+    width: 312px;
+    height: 288px;
+
+    border-radius: 16px;
+    color: var(--text-secondary-color);
+  }
+
+  .ofertas-titulo {
+    font-size: 32px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .card {
+    width: 588px;
+    height: 308px;
+  }
+
+  .cards-btn {
+    width: 280px;
+  }
+}
+
+@media (min-width: 1850px) {
+  .cards {
+    padding: 0 120px;
+  }
+}
