@@ -1,3 +1,3 @@
-@import url(/src/components/HeroBlog/index.css);
-@import url(/src/components/JourneyHistorysBlog/index.css);
-@import url(/src/components/MorePosts/index.css);
+@import url('../../components/HeroBlog/index.css');
+@import url('../../components/JourneyHistorysBlog/index.css');
+@import url('../../components/MorePosts/index.css');

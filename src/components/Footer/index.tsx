@@ -1,5 +1,6 @@
 import { FaFacebook, FaInstagram, FaTwitter } from 'react-icons/fa';
 import './index.css';
+import logoRodape from '../../assets/Logo-branco 1.png';
 
 interface FooterProps {
   className?: string;
@@ -12,7 +13,7 @@ export default function Footer({ className }: FooterProps) {
       <div className="rodape">
         <div className="rodape-container">
           <div className="rodape-secao1">
-            <img src="src/assets/Logo-Branco 1.png" alt="" className="logo-rodape" />
+            <img src={logoRodape} alt="" className="logo-rodape" />
             <p>Horário de atendimento: 08h - 20h (Segunda e Sábado)</p>
             <p>Desenvolvido por Alura. Projeto fictício sem fins comerciais</p>
           </div>

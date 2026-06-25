@@ -7,7 +7,7 @@
 }
 
 .logo-cabecalho {
-  background-image: url(src/assets/Logo-provisória-branca\ 1.svg);
+  background-image: url('../../assets/Logo-provisória-branca 1.svg');
   background-size: cover;
   width: 64px;
   height: 64px;
@@ -21,7 +21,7 @@
   }
 
   .logo-cabecalho {
-    background-image: url(src/assets/Logo-provisória-branca-desktop.png);
+    background-image: url('../../assets/Logo-provisória-branca-desktop.png');
     width: 260px;
     height: 64px;
   }

@@ -98,7 +98,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: url(src/assets/Tokyo.jpg);
+  background-image: url('../../assets/Tokyo.jpg');
   background-size: cover;
   opacity: 50%;
   z-index: -2;
@@ -112,7 +112,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: url(src/assets/san-andreas.avif);
+  background-image: url('../../assets/san-andreas.avif');
   background-size: cover;
   opacity: 50%;
   z-index: -1;
@@ -126,7 +126,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: url(src/assets/paraiba.jpeg);
+  background-image: url('../../assets/paraiba.jpeg');
   background-size: cover;
   opacity: 50%;
   z-index: -1;
@@ -140,7 +140,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: url(src/assets/manaus.avif);
+  background-image: url('../../assets/manaus.avif');
   background-size: cover;
   opacity: 50%;
   z-index: -1;

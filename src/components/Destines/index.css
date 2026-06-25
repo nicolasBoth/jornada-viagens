@@ -9,7 +9,7 @@
 }
 
 .tokyo {
-  background-image: url(src/assets/Tokyo.jpg);
+  background-image: url('../../assets/Tokyo.jpg');
   background-size: cover;
   background-position: center;
   width: 100%;
@@ -17,7 +17,7 @@
 }
 
 .osaka {
-  background-image: url(src/assets/Osaka.jpg);
+  background-image: url('../../assets/Osaka.jpg');
   background-size: cover;
   background-position: center;
   width: 100%;

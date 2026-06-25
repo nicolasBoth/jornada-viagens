@@ -1,21 +1,24 @@
 import { FaStar } from 'react-icons/fa';
+import talitaFoto from '../../assets/talita.png';
+import amariFoto from '../../assets/amari.png';
+import lauroFoto from '../../assets/lauro.png';
 
 const depoimentos = [
   {
     nome: 'Talita Villas Boas',
-    foto: 'src/assets/talita.png',
+    foto: talitaFoto,
     comentario:
       'A Jornada foi uma das melhores agências de viagens que eu já experimentei. O serviço ao cliente foi excepcional, e toda a equipe foi muito atenciosa e prestativa.',
   },
   {
     nome: 'Amari Salin',
-    foto: 'src/assets/amari.png',
+    foto: amariFoto,
     comentario:
       'Recomendo fortemente a agência de viagens Jornada. Eles oferecem um serviço personalizado e de alta qualidade que excedeu minhas expectativas em minha última viagem.',
   },
   {
     nome: 'Lauro B. Matos',
-    foto: 'src/assets/lauro.png',
+    foto: lauroFoto,
     comentario:
       'Minha viagem com a Jornada foi incrível! Recomendo muito a agência para quem busca uma experiência emocionante e personalizada.',
   },

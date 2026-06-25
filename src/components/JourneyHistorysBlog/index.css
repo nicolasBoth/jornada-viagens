@@ -22,7 +22,7 @@
 }
 
 .chegada-img {
-  background-image: url('src/assets/chegadaimg-mobile.png');
+  background-image: url('../../assets/chegadaimg-mobile.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -32,7 +32,7 @@
 }
 
 .acomodacao-img {
-  background-image: url('src/assets/Tokyo.jpg');
+  background-image: url('../../assets/Tokyo.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -77,11 +77,11 @@
   }
 
   .chegada-img {
-    background-image: url('src/assets/chegadaimg-desktop.png');
+    background-image: url('../../assets/chegadaimg-desktop.png');
   }
 
   .acomodacao-img {
     margin-top: 64px;
-    background-image: url('src/assets/Tokyo-desktop.png');
+    background-image: url('../../assets/Tokyo-desktop.png');
   }
 }
