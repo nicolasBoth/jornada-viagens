@@ -3,6 +3,7 @@ import { FaFacebook, FaInstagram, FaTwitter } from 'react-icons/fa';
 import { useState, useEffect } from 'react';
 import { Globe, Plane, ContactIcon } from 'lucide-react';
 import { useIsMobile } from '/src/hooks/useIsMobile.js';
+import { NavLink } from 'react-router';
 
 export default function Menu() {
   const [showMenu, setShowMenu] = useState(true);
@@ -19,13 +20,13 @@ export default function Menu() {
         <nav className="nav-header" id="navHeader">
           <ul id="menuLinks" className="links" aria-hidden="false">
             <li>
-              <a href="#">Blog</a>
+              <NavLink to="/blog">Blog</NavLink>
             </li>
             <li>
-              <a href="#">Pacotes de viagem</a>
+              <NavLink to="/viagem">Pacotes de viagem</NavLink>
             </li>
             <li>
-              <a href="#">Contato</a>
+              <NavLink to="/contato">Contato</NavLink>
             </li>
           </ul>
         </nav>
@@ -61,16 +62,16 @@ export default function Menu() {
           </div>
           <ul id="menuLinks" className="links" aria-hidden={!open}>
             <li>
-              <Globe size={24} color="#fff" className="links-icon" />
-              <a href="#">Blog</a>
+              <Globe size={30} color="#fff" className="links-icon" />
+              <NavLink to="/blog">Blog</NavLink>
             </li>
             <li>
-              <Plane size={24} color="#fff" className="links-icon" />
-              <a href="#">Pacotes de viagem</a>
+              <Plane size={30} color="#fff" className="links-icon" />
+              <NavLink to="/viagem">Pacotes de viagem</NavLink>
             </li>
             <li>
-              <ContactIcon size={24} color="#fff" className="links-icon" />
-              <a href="#">Contato</a>
+              <ContactIcon size={30} color="#fff" className="links-icon" />
+              <NavLink to="/contato">Contato</NavLink>
             </li>
           </ul>
         </div>

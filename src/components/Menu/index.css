@@ -30,6 +30,8 @@
   color: var(--text-secondary-color);
   font-weight: 300;
   font-size: 16px;
+  height: 100%;
+  width: 100%;
 }
 
 .redes-menu {

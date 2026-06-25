@@ -1,19 +1,19 @@
 import react from 'react';
-import './App.css';
-import Header from './components/Header/index.jsx';
-import OfferCards from './components/OfferCards/index.jsx';
-import Hero from './components/Hero/index.jsx';
-import CategoryCards from './components/CategoryCards/index.jsx';
-import Destines from './components/Destines/index.jsx';
-import PaymentConditions from './components/PaymentConditions/index.jsx';
-import Depoiments from './components/Depoiments/index.jsx';
-import Footer from './components/Footer/index.jsx';
+import './home.css';
+import Header from '../../components/Header/index.jsx';
+import OfferCards from '../../components/OfferCards/index.jsx';
+import Hero from '../../components/Hero/index.jsx';
+import CategoryCards from '../../components/CategoryCards/index.jsx';
+import Destines from '../../components/Destines/index.jsx';
+import PaymentConditions from '../../components/PaymentConditions/index.jsx';
+import Depoiments from '../../components/Depoiments/index.jsx';
+import Footer from '../../components/Footer/index.jsx';
 
-function App() {
+function Home() {
   return (
     <>
       <Header />
-      <main> 
+      <main>
         <section className="hero">
           <Hero />
         </section>
@@ -40,4 +40,4 @@ function App() {
   );
 }
 
-export default App;
+export default Home;

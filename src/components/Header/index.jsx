@@ -1,9 +1,10 @@
 import Menu from '../Menu';
+import { NavLink } from 'react-router';
 
 export default function Header() {
   return (
     <header className="cabecalho">
-      <div className="logo-cabecalho"></div>
+      <NavLink to="/" className="logo-cabecalho"></NavLink>
       <Menu />
     </header>
   );

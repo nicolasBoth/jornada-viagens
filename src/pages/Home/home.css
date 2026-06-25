@@ -1,0 +1,11 @@
+@import url(/src/index.css);
+@import url(/src/components/Header/index.css);
+@import url(/src/components/Hero/index.css);
+@import url(/src/components/OfferCards/index.css);
+@import url(/src/components/CategoryCards/index.css);
+@import url(/src/components/Destines/index.css);
+@import url(/src/components/PaymentConditions/index.css);
+@import url(/src/components/Depoiments/index.css);
+@import url(/src/components/Footer/index.css);
+@import url(/src/components/Menu/index.css);
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
