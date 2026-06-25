@@ -11,6 +11,7 @@
 .tokyo {
   background-image: url(src/assets/Tokyo.jpg);
   background-size: cover;
+  background-position: center;
   width: 100%;
   height: 360px;
 }
@@ -18,6 +19,7 @@
 .osaka {
   background-image: url(src/assets/Osaka.jpg);
   background-size: cover;
+  background-position: center;
   width: 100%;
   height: 360px;
 }
@@ -56,6 +58,7 @@
     flex-direction: row;
     justify-content: center;
     gap: 24px;
+    padding: 0px 120px;
   }
 
   .destino {

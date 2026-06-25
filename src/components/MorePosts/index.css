@@ -1,0 +1,35 @@
+.posts {
+  margin-top: 88px;
+}
+
+.hiroshima {
+  background-image: url('src/assets/hiroshima-mobile.png');
+}
+
+.kyoto {
+  background-image: url('src/assets/kyoto-mobile.png');
+}
+
+@media (min-width: 768px) {
+  .hiroshima {
+    background-image: url('src/assets/hiroshima-tablet.png');
+  }
+
+  .kyoto {
+    background-image: url('src/assets/kyoto-tablet.png');
+  }
+}
+
+@media (min-width: 1440px) {
+  .post-img {
+    width: 100%;
+  }
+
+  .hiroshima {
+    background-image: url('src/assets/hiroshima-mobile.png');
+  }
+
+  .kyoto {
+    background-image: url('src/assets/kyoto-mobile.png');
+  }
+}

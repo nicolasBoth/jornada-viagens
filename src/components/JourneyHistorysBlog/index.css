@@ -2,7 +2,7 @@
   padding: 0px 24px;
 }
 
-.chegada-info {
+.chegada-container {
   margin-top: 32px;
 }
 
@@ -12,7 +12,7 @@
 
 .acomodacao-titulo {
   font-size: 28px;
-  margin: 56px 0px 24px;
+  margin: 32px 0 24px;
 }
 
 .chegada-texto,
@@ -28,7 +28,7 @@
   background-position: center;
   width: 100%;
   height: 360px;
-  margin-top: 32px;
+  margin-top: 24px;
 }
 
 .acomodacao-img {
@@ -39,6 +39,12 @@
   width: 100%;
   height: 300px;
   margin-top: 32px;
+}
+
+.descricao-acomodacaoimg {
+  font-size: 14px;
+  margin: 8px 0px 32px;
+  font-style: italic;
 }
 
 @media (min-width: 768px) {
@@ -70,12 +76,7 @@
     padding: 0px 120px;
   }
 
-  .chegada-info {
-    margin-top: 64px;
-  }
-
   .chegada-img {
-    margin-top: 64px;
     background-image: url('src/assets/chegadaimg-desktop.png');
   }
 

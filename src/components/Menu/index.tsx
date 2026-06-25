@@ -1,12 +1,11 @@
 import { IoMdMenu, IoIosClose } from 'react-icons/io';
 import { FaFacebook, FaInstagram, FaTwitter } from 'react-icons/fa';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { Globe, Plane, ContactIcon } from 'lucide-react';
-import { useIsMobile } from '/src/hooks/useIsMobile.js';
+import { useIsMobile } from '../../hooks/useIsMobile';
 import { NavLink } from 'react-router';
 
 export default function Menu() {
-  const [showMenu, setShowMenu] = useState(true);
   const [open, setOpen] = useState(false);
   const isMobile = useIsMobile();
 
