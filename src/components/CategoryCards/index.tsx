@@ -1,6 +1,6 @@
-import { CategoryProps } from "../../types/types";
+import CategoryProps from '../../types/CategoryProps/type.ts';
 
-export default function CategoryCards(props : CategoryProps) {
+export default function CategoryCards(props: CategoryProps) {
   return (
     <>
       <div className="pacote">

@@ -1,7 +1,7 @@
-import OfferCardProps from "../../types/types";
+import OfferCardProps from "../../types/OfferCardProps/type.ts";
 
 
-export default function OfferCards(props : OfferCardProps) {
+export default function OfferCards(props: OfferCardProps) {
   return (
     <>
        <div className={`card ${props.classe}`}>

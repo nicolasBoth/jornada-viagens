@@ -3,9 +3,9 @@ import Header from '../../components/Header';
 import OfferWrapper from '../../components/OfferWrapper';
 import Hero from '../../components/Hero';
 import CategoryWrapper from '../../components/CategoryWrapper';
-import Destines from '../../components/Destines';
+import DestinesWrapper from '../../components/DestinesWrapper';
 import PaymentConditions from '../../components/PaymentConditions';
-import Depoiments from '../../components/Depoiments';
+import DepoimentsWrapper from '../../components/DepoimentsWrapper';
 import Footer from '../../components/Footer';
 
 
@@ -24,16 +24,16 @@ export default function Home() {
           <CategoryWrapper />
         </section>
         <section className="destinos">
-          <Destines />
+          <DestinesWrapper />
         </section>
         <section className="pagamento">
           <PaymentConditions />
         </section>
         <section className="depoimentos">
-          <Depoiments />
+          <DepoimentsWrapper />
         </section>
       </main>
-      <Footer className="img-pre-rodape" />
+      <Footer hasImage />
     </>
   );
 }

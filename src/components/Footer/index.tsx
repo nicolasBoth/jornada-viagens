@@ -1,15 +1,13 @@
 import { FaFacebook, FaInstagram, FaTwitter } from 'react-icons/fa';
 import './index.css';
 import logoRodape from '../../assets/Logo-branco 1.png';
+import FooterProps from '../../types/FooterProps/type'
 
-interface FooterProps {
-  className?: string;
-}
 
-export default function Footer({ className }: FooterProps) {
+export default function Footer(props: FooterProps) {
   return (
     <>
-      <div className={className}></div>
+      <div className={props.hasImage ? "img-pre-rodape" : ""}></div>
       <div className="rodape">
         <div className="rodape-container">
           <div className="rodape-secao1">

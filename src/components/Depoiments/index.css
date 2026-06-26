@@ -32,8 +32,8 @@
 .avaliacao-secao2 {
   display: flex;
   flex-direction: column;
-  gap: 15px;
-  padding-left: 50px;
+  gap: 16px;
+  margin-left: 48px;
 }
 
 .estrelas {
