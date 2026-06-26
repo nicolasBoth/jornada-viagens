@@ -9,6 +9,7 @@ export default function Footer(props: FooterProps) {
     <>
       <div className={props.hasImage ? "img-pre-rodape" : ""}></div>
       <div className={props.hasImageTravel ? "img-pre-rodape img-pre-rodape-travel" : ""}></div>
+      <div className={props.hasImageContact ? "img-pre-rodape img-pre-rodape-contact" : ""}></div>
       <div className="rodape">
         <div className="rodape-container">
           <div className="rodape-secao1">

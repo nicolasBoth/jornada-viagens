@@ -1,7 +1,7 @@
 import { IoMdMenu, IoIosClose } from 'react-icons/io';
-import { FaFacebook, FaInstagram, FaTwitter } from 'react-icons/fa';
+import { FaFacebook, FaInstagram, FaTwitter, FaHome } from 'react-icons/fa';
 import { useState } from 'react';
-import { Globe, Plane, ContactIcon } from 'lucide-react';
+import { Globe, Plane, ContactIcon, Home } from 'lucide-react';
 import { useIsMobile } from '../../hooks/useIsMobile';
 import { NavLink } from 'react-router';
 
@@ -18,6 +18,9 @@ export default function Menu() {
       <>
         <nav className="nav-header" id="navHeader">
           <ul id="menuLinks" className="links" aria-hidden="false">
+            <li>
+              <NavLink to="/">Home</NavLink>
+            </li>
             <li>
               <NavLink to="/blog">Blog</NavLink>
             </li>
@@ -60,6 +63,10 @@ export default function Menu() {
             </button>
           </div>
           <ul id="menuLinks" className="links" aria-hidden={!open}>
+            <li>
+              <Home size={30} color="#fff" className="links-icon" />
+              <NavLink to="/">Home</NavLink>
+            </li>
             <li>
               <Globe size={30} color="#fff" className="links-icon" />
               <NavLink to="/blog">Blog</NavLink>

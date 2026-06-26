@@ -1,0 +1,91 @@
+.forms {
+  margin-bottom: 88px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  padding: 0px 24px; 
+  gap: 32px;
+}
+
+.input {
+  width: 100%;
+  line-height: 40px;
+  padding-left: 8px;
+  border: none;
+  border-bottom: 2px solid #c9c9c9;
+  transition: 0.2s;
+}
+
+.input::placeholder {
+  color: #8c8c8c;
+}
+
+.input:focus {
+  outline: none;
+  border-bottom: 2px solid var(--button-primary-color);
+}
+
+.input:not(:placeholder-shown) {
+  border-bottom: 2px solid var(--button-primary-color);
+}
+
+.phone-email {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 32px;
+}
+
+.textarea {
+  width: 100%;
+}
+
+.textarea-label {
+  font-size: 14px;
+  padding-left: 8px;
+  color: #8c8c8c;
+}
+
+.text-area {
+  margin-top: 8px;
+  max-width: 100%;
+  min-width: 100%;
+  min-height: 80px;
+  max-height: 80px;
+  border: 2px solid #c9c9c9;
+  border-radius: 8px;
+}
+
+.img-pre-rodape-contact {
+  background-image: url(../../assets/img-pre-rodape-contact-mobile.png);
+}
+
+@media (min-width: 768px) {
+  .form {
+    padding: 0px 64px;
+  }
+  .img-pre-rodape-contact {
+  background-image: url(../../assets/img-pre-rodape-contact-tablet.png);
+}
+}
+
+@media (min-width: 1024px) {
+  .form {
+    padding: 0px 120px;
+  }
+
+  .phone-email {
+    flex-wrap: nowrap;
+  }
+
+  .form-btn {
+    width: 50%;
+  }
+  .img-pre-rodape-contact {
+  background-image: url(../../assets/img-pre-rodape-contact-desktop.png);
+}
+}

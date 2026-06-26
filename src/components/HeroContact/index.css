@@ -1,0 +1,15 @@
+.img-hero-contact {
+  background-image: url('../../assets/img-hero-contato-mobile.png');
+}
+
+@media (min-width: 768px) {
+  .img-hero-contact {
+  background-image: url('../../assets/img-hero-contato-tablet.png');
+  }
+}
+
+@media (min-width: 1440px) {
+  .img-hero-contact {
+  background-image: url('../../assets/img-hero-contato-desktop.png');
+  }
+}

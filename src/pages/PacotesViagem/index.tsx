@@ -1,10 +1,10 @@
+import './index.css';
 import Header from '../../components/Header';
 import HeroTravelPackages from '../../components/HeroTravelPackages';
 import DestinesWrapperTravelPackages from '../../components/DestinesWrapperTravelPackages';
 import PaymentConditionsWrapperTravel from '../../components/PaymentConditionsWrapperTravel';
 import DepoimentsWrapperTravelPackages from '../../components/DepoimentsWrapperTravelPackages';
 import Footer from '../../components/Footer';
-import './index.css';
 
 export default function PacotesViagem() {
   return (

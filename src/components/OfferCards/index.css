@@ -88,6 +88,7 @@
 
 .cards-btn:hover {
   cursor: pointer;
+  background-color: var(--button-secondary-color);
   transform: translateY(-2px);
 }
 
