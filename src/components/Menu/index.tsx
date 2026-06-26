@@ -1,5 +1,5 @@
 import { IoMdMenu, IoIosClose } from 'react-icons/io';
-import { FaFacebook, FaInstagram, FaTwitter, FaHome } from 'react-icons/fa';
+import { FaFacebook, FaInstagram, FaTwitter} from 'react-icons/fa';
 import { useState } from 'react';
 import { Globe, Plane, ContactIcon, Home } from 'lucide-react';
 import { useIsMobile } from '../../hooks/useIsMobile';
