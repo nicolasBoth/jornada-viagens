@@ -1,0 +1,39 @@
+.img-payment1 {
+  background-image: url('../../assets/img-paymentconditionstravel-mobile1.png');
+}
+
+.img-payment2 {
+  background-image: url('../../assets/img-paymentconditionstravel-mobile2.png');
+}
+
+.img-payment3 {
+  background-image: url('../../assets/img-paymentconditionstravel-mobile3.png');
+}
+
+@media (min-width: 768px) {
+  .img-payment1 {
+  background-image: url('../../assets/img-paymentconditionstravel-tablet1.png');
+}
+
+.img-payment2 {
+  background-image: url('../../assets/img-paymentconditionstravel-tablet2.png');
+}
+
+.img-payment3 {
+  background-image: url('../../assets/img-paymentconditionstravel-tablet3.png');
+}
+}
+
+@media (min-width: 1440px) {
+  .img-payment1 {
+  background-image: url('../../assets/img-paymentconditionstravel-desktop1.png');
+}
+
+.img-payment2 {
+  background-image: url('../../assets/img-paymentconditionstravel-desktop2.png');
+}
+
+.img-payment3 {
+  background-image: url('../../assets/img-paymentconditionstravel-desktop3.png');
+}
+}

@@ -1,7 +1,8 @@
-export default function PaymentConditions() {
+import PaymentConditionsProps from "../../types/PaymentConditionsProps/type";
+
+export default function PaymentConditions(props: PaymentConditionsProps) {
   return (
     <>
-      <h2 className="pagamento-titulo">Condições de Pagamento</h2>
       <div className="pagamento-container">
         <div className="pagamento-secao1">
           <h3> Parcelamento em até 12x!</h3>
@@ -12,10 +13,10 @@ export default function PaymentConditions() {
         </div>
         <div className="montagens-japao">
           <div className="montagens-japao-secao1">
-            <div className="japao1"></div>
-            <div className="japao2"></div>
+            <div className={props.nome1}></div>
+            <div className={props.nome2}></div>
           </div>
-          <div className="japao3"></div>
+          <div className={props.nome3}></div>
         </div>
       </div>
     </>

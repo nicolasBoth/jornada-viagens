@@ -1,0 +1,15 @@
+.img-travel {
+  background-image: url('../../assets/img-pacotesviagem-mobile.png');
+}
+
+@media (min-width: 768px) {
+  .img-travel {
+    background-image: url('../../assets/img-pacotesviagem-tablet.png');
+  }
+}
+
+@media (min-width: 1440px) {
+   .img-travel {
+    background-image: url('../../assets/img-pacotesviagem-desktop.png');
+  }
+}

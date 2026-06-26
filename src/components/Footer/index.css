@@ -7,6 +7,10 @@
   height: 400px;
 }
 
+.img-pre-rodape-travel {
+  background-image: url('../../assets/img-pre-rodape-travel-mobile.png');
+}
+
 .rodape {
   background-color: var(--background-tertiary-color);
   display: flex;
@@ -67,6 +71,10 @@
     background-image: url('../../assets/pre-rodape-tablet.jpg');
   }
 
+  .img-pre-rodape-travel {
+  background-image: url('../../assets/img-pre-rodape-travel-tablet.png');
+}
+
   .rodape-secao1 p {
     width: 100%;
   }
@@ -77,6 +85,10 @@
     background-image: url('../../assets/pre-rodape-desktop.jpg');
     height: 600px;
   }
+
+  .img-pre-rodape-travel {
+  background-image: url('../../assets/img-pre-rodape-travel-desktop.png');
+}
 
   .rodape-container {
     display: flex;

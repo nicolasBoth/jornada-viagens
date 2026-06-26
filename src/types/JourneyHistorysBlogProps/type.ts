@@ -1,0 +1,6 @@
+export default interface JourneyHistorysBlog {
+  nome?: string;
+  titulo: string;
+  texto: string; 
+  classe?: string;
+}

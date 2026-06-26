@@ -1,13 +1,12 @@
-import './home.css';
+import './index.css';
 import Header from '../../components/Header';
 import OfferWrapper from '../../components/OfferWrapper';
-import Hero from '../../components/Hero';
+import HeroHome from '../../components/HeroHome';
 import CategoryWrapper from '../../components/CategoryWrapper';
-import DestinesWrapper from '../../components/DestinesWrapper';
-import PaymentConditions from '../../components/PaymentConditions';
-import DepoimentsWrapper from '../../components/DepoimentsWrapper';
+import DestinesWrapper from '../../components/DestinesWrapperHome';
+import PaymentConditionsWrapperHome from '../../components/PaymentConditionsWrapperHome';
+import DepoimentsWrapper from '../../components/DepoimentsWrapperHome';
 import Footer from '../../components/Footer';
-
 
 export default function Home() {
   return (
@@ -15,7 +14,7 @@ export default function Home() {
       <Header />
       <main>
         <section className="hero">
-          <Hero />
+          <HeroHome />
         </section>
         <section className="ofertas">
           <OfferWrapper />
@@ -27,7 +26,7 @@ export default function Home() {
           <DestinesWrapper />
         </section>
         <section className="pagamento">
-          <PaymentConditions />
+          <PaymentConditionsWrapperHome />
         </section>
         <section className="depoimentos">
           <DepoimentsWrapper />
