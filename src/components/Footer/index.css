@@ -1,14 +1,13 @@
 .img-pre-rodape {
-  background-image: url('../../assets/pre-rodape-mobile.png');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
   width: 100%;
-  height: 400px;
 }
 
 .img-pre-rodape-travel {
-  background-image: url('../../assets/img-pre-rodape-travel-mobile.png');
+  
+}
+
+.rodape-container {
+  padding: 24px;
 }
 
 .rodape {
@@ -16,8 +15,6 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 24px;
-  padding: 24px;
 
   font-weight: 100;
   color: var(--text-secondary-color);
@@ -68,7 +65,7 @@
 
 @media (min-width: 768px) {
   .img-pre-rodape {
-    background-image: url('../../assets/pre-rodape-tablet.jpg');
+   
   }
 
   .img-pre-rodape-travel {
@@ -82,7 +79,7 @@
 
 @media (min-width: 1440px) {
   .img-pre-rodape {
-    background-image: url('../../assets/pre-rodape-desktop.jpg');
+   
     height: 600px;
   }
 

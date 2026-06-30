@@ -1,13 +1,13 @@
 import { IoMdMenu, IoIosClose } from 'react-icons/io';
-import { FaFacebook, FaInstagram, FaTwitter} from 'react-icons/fa';
+import { FaFacebook, FaInstagram, FaTwitter } from 'react-icons/fa';
 import { useState } from 'react';
 import { Globe, Plane, ContactIcon, Home } from 'lucide-react';
-import { useIsMobile } from '../../hooks/useIsMobile';
+import { useDevice } from '../../hooks/useDevice';
 import { NavLink } from 'react-router';
 
 export default function Menu() {
   const [open, setOpen] = useState(false);
-  const isMobile = useIsMobile();
+  const isMobile = useDevice(1024);
 
   function openMenu() {
     setOpen(!open);
@@ -47,7 +47,8 @@ export default function Menu() {
             aria-controls="menuLinks"
             aria-expanded="true"
           />
-        </button>)}
+        </button>
+      )}
       <nav className={`nav-header ${open && 'links--aberto'}`}>
         <div className="pages">
           <div className="fechar-links">

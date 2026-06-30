@@ -123,8 +123,13 @@
 }
 
 @media (min-width: 1024px) {
+  .nav-header {
+    width: fit-content;
+  }
+
   .links {
     gap: 40px;
+    flex-direction: row;
     align-items: center;
     position: relative;
     height: auto;
@@ -143,23 +148,4 @@
 
 .links {
   display: flex;
-}
-
-@media (min-width: 1024px) {
-  .links {
-    flex-direction: row;
-    align-items: center;
-    position: relative;
-    height: auto;
-    background-color: transparent;
-    justify-content: flex-end;
-  }
-
-  .links a {
-    transition: 0.2s;
-  }
-
-  .links a:hover {
-    color: #ffffff94;
-  }
 }
