@@ -1,6 +1,12 @@
 import JourneyHistorysBlog from '../../components/JourneyHistorysBlog/index';
 import JourneyCityExploring from '../JourneyCityExploringBlog';
 
+import chegadaImgMobile from '../../assets/chegadaimg-mobile.png'
+import chegadaImgDesktop from '../../assets/chegadaimg-desktop.png'
+import acomodacaoImgMobile from '../../assets/Tokyo.jpg'
+import acomodacaoImgDesktop from '../../assets/Tokyo-desktop.png'
+
+
 export default function JourneyHistorysBlogWrapper() {
   return (
     <>
@@ -10,12 +16,18 @@ export default function JourneyHistorysBlogWrapper() {
         titulo="Chegada"
         texto="Nossa viagem começou no Aeroporto Internacional de Narita, localizado a cerca de 60 km de Tóquio. Após desembarcar e fazer todos os procedimentos de imigração, fomos recebidos pela equipe da Jornada Viagens, que nos conduziu até o nosso hotel."
         classe="chegada-img"
+        imageMobile={chegadaImgMobile}
+        imageTablet={chegadaImgMobile}
+        imageDesktop={chegadaImgDesktop}
       />
       <JourneyHistorysBlog
         nome="acomodacao"
         titulo="Acomodação"
         texto="Nos hospedamos no luxuoso Hotel Okura Tokyo, localizado no bairro de Toranomon. O hotel possui uma vista incrível para a cidade, e oferece uma ampla gama de serviços, incluindo um spa, uma piscina, restaurantes renomados e um lounge bar. Ficamos encantados com a atenção aos detalhes e a qualidade do atendimento."
         classe="acomodacao-img"
+        imageMobile={acomodacaoImgMobile}
+        imageTablet={acomodacaoImgMobile}
+        imageDesktop={acomodacaoImgDesktop}
       />
       <p className="descricao-acomodacaoimg">Vista da cidade da janela do hotel!</p>
       <JourneyCityExploring

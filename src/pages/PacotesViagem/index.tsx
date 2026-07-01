@@ -17,14 +17,14 @@ export default function PacotesViagem() {
         <section className="destinos">
           <DestinesWrapperTravelPackages />
         </section>
-        <section className='pagamento'>
+        <section className="pagamento">
           <PaymentConditionsWrapperTravel />
         </section>
-        <section className='depoimentos'>
+        <section className="depoimentos">
           <DepoimentsWrapperTravelPackages />
         </section>
       </main>
-      <Footer hasImageTravel/>
+      <Footer hasImageTravel />
     </>
   );
 }

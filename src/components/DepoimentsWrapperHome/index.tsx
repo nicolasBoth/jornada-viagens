@@ -1,7 +1,7 @@
 import Depoiments from '../Depoiments/index';
 import talitaFoto from '../../assets/talita.png';
 import amariFoto from '../../assets/amari.png';
-import lauroFoto from '../../assets/Ellipse 1.png';
+import lauroFoto from '../../assets/lauro.png';
 
 export default function DepoimentsWrapper() {
   return (

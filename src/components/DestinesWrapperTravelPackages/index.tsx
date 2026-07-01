@@ -1,4 +1,6 @@
 import Destines from '../Destines';
+import imgTokyoMobile from '../../assets/Tokyo.jpg'
+import imgOsakaMobile from '../../assets/Osaka.jpg'
 
 export default function DestinesWrapperTravelPackages() {
   return (
@@ -8,12 +10,18 @@ export default function DestinesWrapperTravelPackages() {
         <Destines
           titulo="Tokyo"
           texto="Tóquio é uma cidade vibrante e cosmopolita, com seus templos históricos, museus de arte moderna e arranha-céus icônicos. Não perca a chance de mergulhar em sua atmosfera fascinante."
-          classe="tokyo"
+          classe="osaka"
+          imageMobile={imgTokyoMobile}
+          imageTablet={imgTokyoMobile}
+          imageDesktop={imgTokyoMobile}
         />
         <Destines
           titulo="Osaka"
           texto="Osaka é uma cidade agitada e moderna no Japãos. A cidade é famosa por sua gastronomia deliciosa e por ser um excelente ponto de partida para explorar outras cidades japonesas próximas."
           classe="osaka"
+          imageMobile={imgOsakaMobile}
+          imageTablet={imgOsakaMobile}
+          imageDesktop={imgOsakaMobile}
         />
       </div>
     </>

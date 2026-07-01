@@ -1,4 +1,5 @@
 import JourneyHistorysBlogProps from '../../types/JourneyHistorysBlogProps/type';
+import ImgsLogic from '../ImgsLogic';
 
 export default function JourneyHistorysBlog(props: JourneyHistorysBlogProps) {
   return (
@@ -8,7 +9,12 @@ export default function JourneyHistorysBlog(props: JourneyHistorysBlogProps) {
           <h2 className={`${props.nome}-titulo`}>{props.titulo}</h2>
           <p className={`${props.nome}-texto`}>{props.texto}</p>
         </div>
-        <div className={props.classe}></div>
+        <ImgsLogic
+          imageMobile={props.imageMobile}
+          imageTablet={props.imageTablet}
+          imageDesktop={props.imageDesktop}
+          classe={props.classe}
+        />
       </div>
     </>
   );

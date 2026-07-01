@@ -1,9 +1,7 @@
 import { FaFacebook, FaInstagram, FaTwitter } from 'react-icons/fa';
 import './index.css';
-import logoRodape from '../../assets/Logo-branco 1.png';
+import logoRodape from '../../assets/logo-footer.png';
 import FooterProps from '../../types/FooterProps/type';
-
-import { useDevice } from '../../hooks/useDevice';
 
 import imgHomeMobile from '../../assets/pre-rodape-mobile.png';
 import imgHomeTablet from '../../assets/pre-rodape-tablet.jpg';
@@ -14,46 +12,35 @@ import imgContactDesktop from '../../assets/img-pre-rodape-contact-desktop.png';
 import imgTravelMobile from '../../assets/img-pre-rodape-travel-mobile.png';
 import imgTravelTablet from '../../assets/img-pre-rodape-travel-tablet.png';
 import imgTravelDesktop from '../../assets/img-pre-rodape-travel-desktop.png';
+import ImgsLogic from '../ImgsLogic';
 
 export default function Footer(props: FooterProps) {
-  const isMobile = useDevice(768);
-  const isTablet = useDevice(1024) && !isMobile;
-  const isDesktop = !isMobile && !isTablet;
-
   return (
     <>
       <div className="rodape">
-        {/* home image */}
-        {props.hasImage && isMobile && (
-          <img src={imgHomeMobile} alt="" className="img-pre-rodape" />
+        {props.hasImage && (
+          <ImgsLogic
+            imageMobile={imgHomeMobile}
+            imageTablet={imgHomeTablet}
+            imageDesktop={imgHomeDesktop}
+            classe="img-pre-rodape"
+          />
         )}
-        {props.hasImage && isTablet && (
-          <img src={imgHomeTablet} alt="" className="img-pre-rodape" />
+        {props.hasImageContact && (
+          <ImgsLogic
+            imageMobile={imgContactMobile}
+            imageTablet={imgContactTablet}
+            imageDesktop={imgContactDesktop}
+            classe="img-pre-rodape"
+          />
         )}
-        {props.hasImage && isDesktop && (
-          <img src={imgHomeDesktop} alt="" className="img-pre-rodape" />
-        )}
-        
-        {/* contact image */}
-        {props.hasImageContact && isMobile && (
-          <img src={imgContactMobile} alt="" className="img-pre-rodape" />
-        )}
-        {props.hasImageContact && isTablet && (
-          <img src={imgContactTablet} alt="" className="img-pre-rodape" />
-        )}
-        {props.hasImageContact && isDesktop && (
-          <img src={imgContactDesktop} alt="" className="img-pre-rodape" />
-        )}
-
-        {/* travel image */}
-        {props.hasImageTravel && isMobile && (
-          <img src={imgTravelMobile} alt="" className="img-pre-rodape" />
-        )}
-        {props.hasImageTravel && isTablet && (
-          <img src={imgTravelTablet} alt="" className="img-pre-rodape" />
-        )}
-        {props.hasImageTravel && isDesktop && (
-          <img src={imgTravelDesktop} alt="" className="img-pre-rodape" />
+        {props.hasImageTravel && (
+          <ImgsLogic
+            imageMobile={imgTravelMobile}
+            imageTablet={imgTravelTablet}
+            imageDesktop={imgTravelDesktop}
+            classe="img-pre-rodape"
+          />
         )}
 
         <div className="rodape-container">

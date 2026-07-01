@@ -1,4 +1,5 @@
-import PaymentConditionsProps from "../../types/PaymentConditionsProps/type";
+import PaymentConditionsProps from '../../types/PaymentConditionsProps/type';
+import ImgsLogic from '../ImgsLogic';
 
 export default function PaymentConditions(props: PaymentConditionsProps) {
   return (
@@ -13,10 +14,25 @@ export default function PaymentConditions(props: PaymentConditionsProps) {
         </div>
         <div className="montagens-japao">
           <div className="montagens-japao-secao1">
-            <div className={props.nome1}></div>
-            <div className={props.nome2}></div>
+            <ImgsLogic
+              imageMobile={props.nomeMobile1}
+              imageTablet={props.nomeTablet1}
+              imageDesktop={props.nomeDesktop1}
+              classe="japao1"
+            />
+            <ImgsLogic
+              imageMobile={props.nomeMobile2}
+              imageTablet={props.nomeTablet2}
+              imageDesktop={props.nomeDesktop2}
+              classe="japao2"
+            />
           </div>
-          <div className={props.nome3}></div>
+          <ImgsLogic
+            imageMobile={props.nomeMobile3}
+            imageTablet={props.nomeTablet3}
+            imageDesktop={props.nomeDesktop3}
+            classe="japao3"
+          />
         </div>
       </div>
     </>

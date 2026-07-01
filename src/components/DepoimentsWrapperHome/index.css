@@ -50,7 +50,7 @@
 @media (min-width: 1440px) {
   .depoimentos {
     gap: 64px;
-    padding-bottom: 104px;
+    padding: 0 120px 88px;
   }
 
   .depoimentos-container {

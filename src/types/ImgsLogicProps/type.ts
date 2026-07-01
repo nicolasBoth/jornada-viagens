@@ -1,7 +1,5 @@
-export default interface DestineProps {
-  titulo: string;
+export default interface ImgsLogicProps {
   classe?: string;
-  texto: string;
   imageMobile?: string;
   imageTablet?: string;
   imageDesktop?: string;

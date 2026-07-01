@@ -1,4 +1,4 @@
-import OfferCards from "../OfferCards";
+import OfferCards from '../OfferCards';
 
 export default function OfferWrapper() {
   return (

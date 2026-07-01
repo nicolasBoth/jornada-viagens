@@ -2,7 +2,7 @@ import './index.css';
 import Header from '../../components/Header';
 import HeroBlog from '../../components/HeroBlog';
 import JourneyHistorysBlogWrapper from '../../components/JourneyHistorysBlogWrapper';
-import DestinesWrapperBlog from '../../components/DestinesWrapperBlog'
+import DestinesWrapperBlog from '../../components/DestinesWrapperBlog';
 import Footer from '../../components/Footer';
 
 export default function Blog() {

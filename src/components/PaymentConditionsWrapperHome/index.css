@@ -39,28 +39,16 @@
 }
 
 .japao1 {
-  background-image: url('../../assets/Montagem japão 1 (1).png');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  width: 49%;
+  width: 100%;
   height: 254px;
 }
 
 .japao2 {
-  background-image: url('../../assets/Montagem japão 2 (1).png');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  width: 49%;
+  width: 100%;
   height: 254px;
 }
 
 .japao3 {
-  background-image: url('../../assets/Montagem japão 3.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
   width: 100%;
   height: 247px;
   margin: 24px 0px;
@@ -83,17 +71,14 @@
 
   .japao1 {
     gap: 10px;
-    background-image: url('../../assets/Montagem japão 1 tablet.jpg');
     height: 254px;
   }
 
   .japao2 {
-    background-image: url('../../assets/japao2-tablet.jpg');
     height: 254x;
   }
 
   .japao3 {
-    background-image: url('../../assets/japao3-tablet.jpg');
     height: 182px;
   }
 }
@@ -122,17 +107,7 @@
     flex-direction: column;
     gap: 24px;
   }
-
-  .japao1 {
-    background-image: url('../../assets/japao1-desktop.jpg');
-  }
-
-  .japao2 {
-    background-image: url('../../assets/japao2-desktop.jpg');
-  }
-
   .japao3 {
-    background-image: url('../../assets/japao3-desktop.jpg');
     width: 790px;
   }
 }
