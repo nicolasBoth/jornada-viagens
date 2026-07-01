@@ -1,5 +1,4 @@
 import Destines from '../Destines';
-import ImgsLogic from '../ImgsLogic';
 
 import imgOsakaMobile from '../../assets/Osaka.jpg';
 import imgHiroshimaMobile from '../../assets/hiroshima-mobile.png';
