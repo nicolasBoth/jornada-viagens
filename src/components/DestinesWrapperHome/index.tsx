@@ -14,6 +14,7 @@ export default function DestinesWrapper() {
             imageMobile={osakaMobile}
             imageTablet={osakaMobile}
             imageDesktop={osakaMobile}
+            classe='osaka'
           />
           <Destines
             titulo="Osaka"
@@ -21,7 +22,7 @@ export default function DestinesWrapper() {
             imageMobile={tokyoMobile}
             imageTablet={tokyoMobile}
             imageDesktop={tokyoMobile}
-
+            classe='osaka'
           />
       </div>
     </>
