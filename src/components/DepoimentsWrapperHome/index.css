@@ -7,8 +7,11 @@
 .avaliacao {
   margin-top: 32px;
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
+  flex-direction: column;
+}
+
+.avaliacao-container {
+  display: flex;
 }
 
 .avaliacao h3 {
