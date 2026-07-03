@@ -64,5 +64,37 @@
     }
   },
 
-  "": ""
+  "blogPage": {
+    "hero": {
+      "heroTitle": "Journey Blog",
+      "heroText": "Travel stories from our clients. Get inspired, find itineraries and tips! What's your next destination?"
+    },
+
+    "journeyHistorys": {
+      "journeyHistorysTitle": "Tokyo",
+      "history": {
+        "arrivingTitle": "Arriving",
+        "arrivingText": "Our trip began at Narita International Airport, located about 60 km from Tokyo. After disembarking and completing all immigration procedures, we were greeted by the Jornada Viagens team, who escorted us to our hotel.",
+        "accommodationTitle": "Accommodation",
+        "accommodationText": "We stayed at the luxurious Hotel Okura Tokyo, located in the Toranomon district. The hotel boasts incredible city views and offers a wide range of amenities, including a spa, a swimming pool, renowned restaurants, and a lounge bar. We were delighted with the attention to detail and the quality of service.",
+        "accommodationImgDesc": "View form the hotel window!",
+        "exploringCityTitle": "Exploring the city",
+        "exploringCityText": "We began our city tour with a visit to the famous Sensoji Temple, one of the oldest and most important Buddhist temples in Japan. We strolled along Nakamise shopping street, where we found many shops selling typical Japanese items such as kimonos, fans, and traditional foods. Next, we visited the iconic Shibuya Crossing, one of the busiest in the world, where we observed the synchronized crossing of pedestrians. The following day, we visited Ueno Park, home to the Tokyo National Museum, where we learned about Japanese history and culture. In the evening, we went to a typical Izakaya, a Japanese bar serving a wide variety of dishes and drinks.",
+        "shoppingTitle": "Shopping",
+        "shoppingText": "Tokyo is famous for its department stores and shopping malls, and we couldn't miss visiting some of them. We went to the famous Ginza shopping district, where we found stores of the world's most renowned brands. We also visited the Akihabara district, known as Tokyo's electronics and entertainment center, where we found numerous game, electronics, and manga stores.",
+        "gastronomyTitle": "Gastronomy",
+        "gastronomyText": "You can't talk about Japan without mentioning its cuisine. We had the opportunity to try a wide variety of typical dishes, such as sushi, sashimi, ramen, and tempura, as well as traditional sweets like mochi.",
+        "concludingTitle": "Concluding",
+        "concludingText": "Our trip to Tokyo with Jornada Viagens was an unforgettable experience. The agency team took care of every detail, from booking the hotel to choosing the best places to visit and eat. We recommend Jornada Viagens to anyone who wants to have an amazing trip to Japan."
+      }
+    },
+    
+    "otherPosts": {
+      "otherPostsTitle": "Other Posts",
+      "otherPostsDestines": {
+        "hiroshimaTitle": "Hiroshima",
+        "kyotoTitle": "Kyoto"
+      }
+    }
+  }
 }

@@ -10,7 +10,8 @@
   margin-bottom: 24px;
 }
 
-.acomodacao-titulo {
+.acomodacao-titulo,
+.chegada-titulo {
   font-size: 28px;
   margin: 32px 0 24px;
 }

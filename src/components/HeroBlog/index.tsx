@@ -1,10 +1,13 @@
+import { useTranslation } from 'react-i18next';
 import HeroPages from '../HeroPages';
 
 export default function HeroBlog() {
+  const { t } = useTranslation();
+
   return (
     <HeroPages
-      titulo="Blog da Jornada"
-      texto="Histórias de viagens de nossos clientes. Inspire-se, encontre roteiros e dicas! Qual seu próximo destino?"
+      titulo={t('blogPage.hero.heroTitle')}
+      texto={t('blogPage.hero.heroText')}
       background="img-blog"
     />
   );
