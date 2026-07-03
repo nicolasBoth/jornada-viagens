@@ -3,7 +3,11 @@ import imgHeroTablet from '../../assets/img-hero-tablet.png';
 import imgHeroDesktop from '../../assets/img-hero-desktop.png';
 import ImgsLogic from '../ImgsLogic';
 
+import { useTranslation } from 'react-i18next'
+
 export default function HeroHome() {
+  const { t } = useTranslation()
+
   return (
     <>
       <ImgsLogic
@@ -14,9 +18,7 @@ export default function HeroHome() {
       />
       <section className="hero-texto">
         <p className="texto">
-          Somos uma agência apaixonada por criar viagens inesquecíveis. Do destino à seleção das
-          atividades, cuidamos de todos os detalhes para que você aproveite ao máximo cada momento
-          da sua jornada!
+          {t('homePage.hero.heroText')}
         </p>
       </section>
     </>

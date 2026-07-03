@@ -9,11 +9,14 @@ import japaoTablet3 from '../../assets/japao3-tablet.jpg';
 import japaoDesktop1 from '../../assets/japao1-desktop.jpg';
 import japaoDesktop2 from '../../assets/japao2-desktop.jpg';
 import japaoDesktop3 from '../../assets/japao3-desktop.jpg';
+import { useTranslation } from 'react-i18next';
 
 export default function PaymentConditionsWrapperHome() {
+  const { t } = useTranslation()
+
   return (
     <>
-      <h2 className="pagamento-titulo">Condições de Pagamento</h2>
+      <h2 className="pagamento-titulo">{t('homePage.paymentConditions.paymentConditionsTitle')}</h2>
       <PaymentConditions
         nomeMobile1={japaoMobile1}
         nomeMobile2={japaoMobile2}

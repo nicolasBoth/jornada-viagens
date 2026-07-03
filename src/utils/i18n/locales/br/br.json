@@ -1,0 +1,66 @@
+{
+  "homePage": {
+    "menu": {
+      "home": "Home",
+      "blog": "Blog",
+      "travelPackages": "Pacotes de viagem",
+      "contact": "Contato"
+    },
+
+    "hero": {
+      "heroText": "Somos uma agência apaixonada por criar viagens inesquecíveis. Do destino à seleção das atividades, cuidamos de todos os detalhes para que você aproveite ao máximo cada momento da sua jornada!"
+    },
+
+    "offers": {
+      "offersTitle": "Ofertas da semana",
+      "countriesNames": {
+        "japan": "Japão",
+        "sanAndreas": "San Andreas",
+        "paraiba": "Paraiba",
+        "manaus": "Manaus"
+      },
+      "btnText": "Ver detalhes"
+    },
+
+    "categorys": {
+      "categorysTitle": "Busque por categoria",
+      "categorysCards": {
+        "nationalsPackages": "Pacotes Nacionais",
+        "internationalsPackages": "Pacotes Internacionais",
+        "transfer": "Transfer",
+        "travelInsurance": "Seguro Viagem"
+      }
+    },
+
+    "destines": {
+      "destinesTitle": "Destinos Populares",
+      "destine": {
+        "tokyoTitle": "Tokyo",
+        "tokyoText": "Tóquio é uma cidade vibrante e cosmopolita, com seus templos históricos, museus de arte moderna e arranha-céus icônicos. Não perca a chance de mergulhar em sua atmosfera fascinante.",
+        "osakaTitle": "Osaka",
+        "osakaText": "Osaka é uma cidade agitada e moderna no Japãos. A cidade é famosa por sua gastronomia deliciosa e por ser um excelente ponto de partida para explorar outras cidades japonesas próximas."
+      }
+    },
+
+    "paymentConditions": {
+      "paymentConditionsTitle": "Condições de Pagamento",
+      "paymentConditionsStallments": "Parcelamento em até 12x!",
+      "paymentConditionsText": "Viaje pagando em até 12 parcelas no cartão, à vista no crédito com 5% de desconto ou no Pix com 10% de desconto!"
+    },
+
+    "depoiments": {
+      "depoimentsTitle": "Depoimentos",
+      "depoiment": {
+        "talitaDepoiment": "A Jornada foi uma das melhores agências de viagens que eu já experimentei. O serviço ao cliente foi excepcional, e toda a equipe foi muito atenciosa e prestativa.",
+        "amariDepoiment": "Recomendo fortemente a agência de viagens Jornada. Eles oferecem um serviço personalizado e de alta qualidade que excedeu minhas expectativas em minha última viagem.",
+        "lauroDepoiment": "Minha viagem com a Jornada foi incrível! Recomendo muito a agência para quem busca uma experiência emocionante e personalizada."
+      }
+    },
+
+    "footer": {
+      "footerOpeningHours": "Horário de atendimento: 08h - 20h (Segunda a Sábado)",
+      "footerCredits": "Desenvolvido por Alura. Projeto fictício sem fins comerciais.",
+      "footerSocialMedia": "Acesse nossas redes:"
+    }
+  }
+}

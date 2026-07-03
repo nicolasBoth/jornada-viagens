@@ -2,14 +2,14 @@
   display: flex;
   flex-direction: column;
   gap: 24px;
-  padding: 0 24px;
+  padding: 0px 24px 88px;
   justify-content: center;
 }
 
 .pagamento-titulo {
   font-size: 32px;
   text-align: center;
-  margin: 0 auto;
+  margin: 0px auto ;
   padding-bottom: 25px;
   width: 230px;
   position: relative;
@@ -19,7 +19,7 @@
 .pagamento-titulo::after {
   content: '';
   position: absolute;
-  bottom: 0;
+  bottom: 0px;
   left: 50%;
   transform: translateX(-50%);
   width: 180px;
@@ -33,7 +33,7 @@
 }
 
 .pagamento p {
-  margin: 24px 0;
+  margin: 24px 0px;
   line-height: 35px;
   font-size: 20px;
 }
@@ -51,7 +51,7 @@
 .japao3 {
   width: 100%;
   height: 247px;
-  margin: 24px 0px;
+  margin: 24px 0px 0px;
 }
 
 .montagens-japao-secao1 {

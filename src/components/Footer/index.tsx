@@ -13,8 +13,11 @@ import imgTravelMobile from '../../assets/img-pre-rodape-travel-mobile.png';
 import imgTravelTablet from '../../assets/img-pre-rodape-travel-tablet.png';
 import imgTravelDesktop from '../../assets/img-pre-rodape-travel-desktop.png';
 import ImgsLogic from '../ImgsLogic';
+import { useTranslation } from 'react-i18next';
 
 export default function Footer(props: FooterProps) {
+  const { t } = useTranslation()
+
   return (
     <>
       <div className="rodape">
@@ -46,11 +49,11 @@ export default function Footer(props: FooterProps) {
         <div className="rodape-container">
           <div className="rodape-secao1">
             <img src={logoRodape} alt="" className="logo-rodape" />
-            <p>Horário de atendimento: 08h - 20h (Segunda e Sábado)</p>
-            <p>Desenvolvido por Alura. Projeto fictício sem fins comerciais</p>
+            <p>{t('homePage.footer.footerOpeningHours')}</p>
+            <p>{t('homePage.footer.footerCredits')}</p>
           </div>
           <div className="redes">
-            <p>Acesse nossas redes:</p>
+            <p>{t('homePage.footer.footerSocialMedia')}</p>
             <ul>
               <li>
                 <a href="#" className="facebook">

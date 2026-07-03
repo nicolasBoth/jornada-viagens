@@ -1,0 +1,68 @@
+{
+  "homePage": {
+    "menu": {
+      "home": "Home",
+      "blog": "Blog",
+      "travelPackages": "Travel packages",
+      "contact": "Contact"
+    },
+
+    "hero": {
+      "heroText": "We are an agency passionate about creating unforgettable trips. From the destination to the selection of activities, we take care of every detail so you can make the most of every moment of your journey!"
+    },
+
+    "offers": {
+      "offersTitle": "Week offers",
+      "countriesNames": {
+        "japan": "Japan",
+        "sanAndreas": "San Andreas",
+        "paraiba": "Paraiba",
+        "manaus": "Manaus"
+      },
+      "btnText": "View details"
+    },
+
+    "categorys": {
+      "categorysTitle": "Search by category",
+      "categorysCards": {
+        "nationalPackages": "National Packages",
+        "internationalPackages": "International Packages",
+        "transfer": "Transfer",
+        "travelInsurance": "Travel Insurance"
+      }
+    },
+
+    "destines": {
+      "destinesTitle": "Popular Destines",
+      "destine": {
+        "tokyoTitle": "Tokyo",
+        "tokyoText": "Tokyo is a vibrant and cosmopolitan city, with its historic temples, modern art museums, and iconic skyscrapers. Don't miss the chance to immerse yourself in its fascinating atmosphere.",
+        "osakaTitle": "Osaka",
+        "osakaText": "Osaka is a bustling and modern city in Japan. The city is famous for its delicious cuisine and for being an excellent starting point for exploring other nearby Japanese cities."
+      }
+    },
+
+    "paymentConditions": {
+      "paymentConditionsTitle": "Payment Conditions",
+      "paymentConditionsStallments": "Payment in up to 12 installments!",
+      "paymentConditionsText": "Travel by paying in up to 12 installments with your credit card, pay in full with a 5% discount on credit, or use Pix for a 10% discount!"
+    },
+
+    "depoiments": {
+      "depoimentsTitle": "Depoiments",
+      "depoiment": {
+        "talitaDepoiment": "Jornada was one of the best travel agencies I've ever used. The customer service was exceptional, and the entire team was very attentive and helpful.",
+        "amariDepoiment": "I highly recommend the Jornada travel agency. They offer a personalized, high-quality service that exceeded my expectations on my last trip.",
+        "lauroDepoiment": "I highly recommend the Jornada travel agency. They offer a personalized, high-quality service that exceeded my expectations on my last trip."
+      }
+    },
+
+    "footer": {
+      "footerOpeningHours": "Opening hours: 08h - 20h (Monday to Saturday)",
+      "footerCredits": "Developed by Alura. Fictional projects with no commercial purpose.",
+      "footerSocialMedia": "Access our social media:"
+    }
+  },
+
+  "": ""
+}

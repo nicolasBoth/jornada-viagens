@@ -4,10 +4,12 @@ import { useState } from 'react';
 import { Globe, Plane, ContactIcon, Home } from 'lucide-react';
 import { useDevice } from '../../hooks/useDevice';
 import { NavLink } from 'react-router';
+import { useTranslation } from 'react-i18next';
 
 export default function Menu() {
   const [open, setOpen] = useState(false);
   const isMobile = useDevice(1024);
+  const { t } = useTranslation();
 
   function openMenu() {
     setOpen(!open);
@@ -19,16 +21,16 @@ export default function Menu() {
         <nav className="nav-header" id="navHeader">
           <ul id="menuLinks" className="links" aria-hidden="false">
             <li>
-              <NavLink to="/">Home</NavLink>
+              <NavLink to="/">{t('homePage.menu.home')}</NavLink>
             </li>
             <li>
-              <NavLink to="/blog">Blog</NavLink>
+              <NavLink to="/blog">{t('homePage.menu.blog')}</NavLink>
             </li>
             <li>
-              <NavLink to="/viagem">Pacotes de viagem</NavLink>
+              <NavLink to="/viagem">{t('homePage.menu.travelPackages')}</NavLink>
             </li>
             <li>
-              <NavLink to="/contato">Contato</NavLink>
+              <NavLink to="/contato">{t('homePage.menu.contact')}</NavLink>
             </li>
           </ul>
         </nav>
@@ -66,24 +68,24 @@ export default function Menu() {
           <ul id="menuLinks" className="links" aria-hidden={!open}>
             <li>
               <Home size={30} color="#fff" className="links-icon" />
-              <NavLink to="/">Home</NavLink>
+              <NavLink to="/">{t('homePage.menu.home')}</NavLink>
             </li>
             <li>
               <Globe size={30} color="#fff" className="links-icon" />
-              <NavLink to="/blog">Blog</NavLink>
+              <NavLink to="/blog">{t('homePage.menu.blog')}</NavLink>
             </li>
             <li>
               <Plane size={30} color="#fff" className="links-icon" />
-              <NavLink to="/viagem">Pacotes de viagem</NavLink>
+              <NavLink to="/viagem">{t('homePage.menu.travelPackages')}</NavLink>
             </li>
             <li>
               <ContactIcon size={30} color="#fff" className="links-icon" />
-              <NavLink to="/contato">Contato</NavLink>
+              <NavLink to="/contato">{t('homePage.menu.contact')}</NavLink>
             </li>
           </ul>
         </div>
         <div className="redes redes-menu">
-          <p>Acesse nossas redes:</p>
+          <p>{t('homePage.footer.footerSocialMedia')}</p>
           <ul>
             <li>
               <a href="#" className="facebook">

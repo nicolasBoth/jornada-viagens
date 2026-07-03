@@ -6,6 +6,7 @@ import Home from './pages/Home';
 import Blog from './pages/Blog';
 import Contato from './pages/Contato';
 import PacotesViagem from './pages/PacotesViagem';
+import './utils/i18n/i18n';
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
@@ -17,5 +18,5 @@ createRoot(document.getElementById('root')!).render(
         <Route path="/viagem" element={<PacotesViagem />} />
       </Routes>
     </BrowserRouter>
-  </StrictMode>
+  </StrictMode>,
 );

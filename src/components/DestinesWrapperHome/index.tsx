@@ -2,26 +2,29 @@ import Destines from '../Destines';
 
 import tokyoMobile from '../../assets/Tokyo.jpg';
 import osakaMobile from '../../assets/Osaka.jpg';
+import { useTranslation } from 'react-i18next';
 
 export default function DestinesWrapper() {
+  const { t } = useTranslation()
+
   return (
     <>
-      <h2 className="pagamento-titulo ">Destinos Populares</h2>
+      <h2 className="pagamento-titulo ">{t('homePage.destines.destinesTitle')}</h2>
       <div className="destinos-container">
           <Destines
-            titulo="Tokyo"
-            texto="Tóquio é uma cidade vibrante e cosmopolita, com seus templos históricos, museus de arte moderna e arranha-céus icônicos. Não perca a chance de mergulhar em sua atmosfera fascinante."
-            imageMobile={osakaMobile}
-            imageTablet={osakaMobile}
-            imageDesktop={osakaMobile}
-            classe='osaka'
-          />
-          <Destines
-            titulo="Osaka"
-            texto="Osaka é uma cidade agitada e moderna no Japãos. A cidade é famosa por sua gastronomia deliciosa e por ser um excelente ponto de partida para explorar outras cidades japonesas próximas."
+            titulo={t('homePage.destines.destine.tokyoTitle')}
+            texto={t('homePage.destines.destine.tokyoText')}
             imageMobile={tokyoMobile}
             imageTablet={tokyoMobile}
             imageDesktop={tokyoMobile}
+            classe='osaka'
+          />
+          <Destines
+            titulo={t('homePage.destines.destine.osakaTitle')}
+            texto={t('homePage.destines.destine.osakaText')}
+            imageMobile={osakaMobile}
+            imageTablet={osakaMobile}
+            imageDesktop={osakaMobile}
             classe='osaka'
           />
       </div>
