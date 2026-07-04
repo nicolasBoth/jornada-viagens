@@ -1,10 +1,11 @@
 import { IoMdMenu, IoIosClose } from 'react-icons/io';
 import { FaFacebook, FaInstagram, FaTwitter } from 'react-icons/fa';
 import { useState } from 'react';
-import { Globe, Plane, ContactIcon, Home } from 'lucide-react';
+import { Globe, Plane, ContactIcon, Home, Languages } from 'lucide-react';
 import { useDevice } from '../../hooks/useDevice';
 import { NavLink } from 'react-router';
 import { useTranslation } from 'react-i18next';
+import i18next from 'i18next';
 
 export default function Menu() {
   const [open, setOpen] = useState(false);
@@ -33,6 +34,19 @@ export default function Menu() {
               <NavLink to="/contato">{t('homePage.menu.contact')}</NavLink>
             </li>
           </ul>
+
+          <div className="lang">
+            <Languages size={30} color='#fff' className='links-icon'/>
+            <select
+              className="changing-language"
+              onChange={(e) => {
+                i18next.changeLanguage(e.target.value);
+              }}
+            >
+              <option value="br">PT</option>
+              <option value="en">EN</option>
+            </select>
+          </div>
         </nav>
       </>
     );
@@ -83,6 +97,18 @@ export default function Menu() {
               <NavLink to="/contato">{t('homePage.menu.contact')}</NavLink>
             </li>
           </ul>
+          <div className="lang">
+            <Languages size={30} color="#fff" className="links-icon language-icon" />
+            <select
+              className="changing-language"
+              onChange={(e) => {
+                i18next.changeLanguage(e.target.value);
+              }}
+            >
+              <option value="br">Português</option>
+              <option value="en">English</option>
+            </select>
+          </div>
         </div>
         <div className="redes redes-menu">
           <p>{t('homePage.footer.footerSocialMedia')}</p>

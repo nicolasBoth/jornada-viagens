@@ -3,8 +3,9 @@
     "menu": {
       "home": "Home",
       "blog": "Blog",
-      "travelPackages": "Travel packages",
-      "contact": "Contact"
+      "travelPackages": "Packages",
+      "contact": "Contact",
+      "langChange": "Select a language"
     },
 
     "hero": {

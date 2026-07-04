@@ -7,6 +7,7 @@
 
 .links {
   list-style: none;
+  padding: 16px 0px;
 }
 
 .links ul {
@@ -32,6 +33,52 @@
   font-size: 16px;
   height: 100%;
   width: 100%;
+}
+
+.lang {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: var(--background-tertiary-color);
+}
+
+.changing-language {
+  appearance: base-select;
+  color: var(--text-secondary-color);
+  background-color: #2d2d2d;
+  border-radius: 0px;
+  font-size: 16px;
+  font-weight: 300;
+  border: none;
+  padding: 16px 8px;
+  height: 100%;
+  width: 100%;
+}
+
+.changing-language::picker(select) {
+  appearance: base-select;
+  background-color: var(--background-quaternary-color);
+  color: var(--text-secondary-color);
+  border: none;
+}
+
+.changing-language::picker-icon {
+  transition: 0.15s ease;
+  align-content: center;
+  margin-left: 8px;
+  font-size: 12px;
+}
+
+.changing-language:open::picker-icon {
+  rotate: 180deg;
+}
+
+.changing-language option {
+  padding: 16px 8px;
+}
+
+.changing-language option::checkmark {
+  content: none;
 }
 
 .redes-menu {
@@ -89,7 +136,7 @@
   }
 
   .fechar {
-    padding: 16px;
+    padding: 16px 16px 16px 0px;
     background-color: transparent;
   }
 
@@ -97,7 +144,6 @@
     display: flex;
     justify-content: flex-end;
     border-bottom: 2px solid var(--button-primary-color);
-    margin-bottom: 16px;
   }
 
   .links {
@@ -105,6 +151,7 @@
     flex-direction: column;
     top: 0px;
     right: 0px;
+    border-bottom: 2px solid var(--button-primary-color);
   }
 
   .links--aberto {
@@ -125,6 +172,9 @@
 @media (min-width: 1024px) {
   .nav-header {
     width: fit-content;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
   }
 
   .links {
@@ -143,6 +193,26 @@
 
   .links a:hover {
     color: #ffffff94;
+  }
+
+  .lang {
+    background-color: var(--background-quaternary-color);
+    margin-left: 24px;
+    border-radius: 16px;
+  }
+
+  .changing-language {
+    font-size: 18px;
+    border-radius: 16px;
+    background-color: var(--background-quaternary-color);
+  }
+
+  .changing-language:open {
+    border-radius: 16px 16px 0px 0px;
+  }
+
+  .changing-language::picker(select) {
+    border-radius: 0px 0px 16px 16px;
   }
 }
 
