@@ -5,12 +5,11 @@ import { Globe, Plane, ContactIcon, Home, Languages } from 'lucide-react';
 import { useDevice } from '../../hooks/useDevice';
 import { NavLink } from 'react-router';
 import { useTranslation } from 'react-i18next';
-import i18next from 'i18next';
 
 export default function Menu() {
   const [open, setOpen] = useState(false);
   const isMobile = useDevice(1024);
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
 
   function openMenu() {
     setOpen(!open);
@@ -36,11 +35,12 @@ export default function Menu() {
           </ul>
 
           <div className="lang">
-            <Languages size={30} color='#fff' className='links-icon'/>
+            <Languages size={30} color="#fff" className="links-icon" />
             <select
               className="changing-language"
+              value={i18n.resolvedLanguage}
               onChange={(e) => {
-                i18next.changeLanguage(e.target.value);
+                i18n.changeLanguage(e.target.value);
               }}
             >
               <option value="br">PT</option>
@@ -101,8 +101,9 @@ export default function Menu() {
             <Languages size={30} color="#fff" className="links-icon language-icon" />
             <select
               className="changing-language"
+              value={i18n.resolvedLanguage}
               onChange={(e) => {
-                i18next.changeLanguage(e.target.value);
+                i18n.changeLanguage(e.target.value);
               }}
             >
               <option value="br">Português</option>
